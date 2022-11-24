@@ -32,15 +32,15 @@ int equalStacks(vector<int> h1, vector<int> h2, vector<int> h3) {
         {
             return c1.top();
         }
-        if (c1.top()>c2.top()&&c1.top()>c3.top())
+        if (c1.top()>=c2.top()&&c1.top()>=c3.top())
         {
             c1.pop();
         }
-        else if (c2.top()>c3.top()&&c2.top()>c1.top())
+        else if (c2.top()>=c3.top()&&c2.top()>=c1.top())
         {
             c2.pop();
         }
-        else if (c3.top()>c2.top()&&c3.top()>c1.top())
+        else if (c3.top()>=c2.top()&&c3.top()>=c1.top())
         {
             c3.pop();
         }
